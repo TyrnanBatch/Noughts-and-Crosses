@@ -1,5 +1,3 @@
-import time
-
 print("--- Noughts and Crosses ---")
 print(" ")
 print("the commands to place your pieces are as follow:")
