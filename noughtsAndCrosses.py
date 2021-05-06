@@ -137,12 +137,14 @@ def playerTwo():
         print(" ")
         quit()
 
+def bourd():
+    print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
+    print("-----------")
+    print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
+    print("-----------")
+    print(" " + str(bottomLeft) +" | " + str(bottomMiddle) +" | " + str(bottomRight) +" ")
 
-print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
-print("-----------")
-print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
-print("-----------")
-print(" " + str(bottomLeft) +" | " + str(bottomMiddle) +" | " + str(bottomRight) +" ")
+bourd()
 
 firstGo = input("Player one's first go: ")
 
@@ -165,11 +167,7 @@ if firstGo == "Bottom Middle":
 if firstGo == "Bottom Right":
     bottomRight = "X"
 
-print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
-print("-----------")
-print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
-print("-----------")
-print(" " + str(bottomLeft) +" | " + str(bottomMiddle) +" | " + str(bottomRight) +" ")
+bourd()
 
 secondGo = input("Player two's first go: ")
 
@@ -192,11 +190,7 @@ if secondGo == "Bottom Middle":
 if secondGo == "Bottom Right":
     bottomRight = "O"
 
-print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
-print("-----------")
-print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
-print("-----------")
-print(" " + str(bottomLeft) +" | " + str(bottomMiddle) +" | " + str(bottomRight) +" ")
+bourd()
 
 thirdGo = input("Player one's second go: ")
 
@@ -219,11 +213,7 @@ if thirdGo == "Bottom Middle":
 if thirdGo == "Bottom Right":
     bottomRight = "X"
 
-print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
-print("-----------")
-print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
-print("-----------")
-print(" " + str(bottomLeft) +" | " + str(bottomMiddle) +" | " + str(bottomRight) +" ")
+bourd()
 
 fourthGo = input("PLayer two's second go: ")
 
@@ -246,11 +236,7 @@ if fourthGo == "Bottom Middle":
 if fourthGo == "Bottom Right":
     bottomRight = "O"
 
-print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
-print("-----------")
-print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
-print("-----------")
-print(" " + str(bottomLeft) +" | " + str(bottomMiddle) +" | " + str(bottomRight) +" ")
+bourd()
 
 fifthGo = input("Player one's third go: ")
 
@@ -275,11 +261,7 @@ if fifthGo == "Bottom Right":
 
 playerOne()
 
-print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
-print("-----------")
-print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
-print("-----------")
-print(" " + str(bottomLeft) +" | " + str(bottomMiddle) +" | " + str(bottomRight) +" ")
+bourd()
 
 sixthGo = input("Player two's third go: ")
 
@@ -304,12 +286,7 @@ if sixthGo == "Bottom Right":
 
 playerTwo()
 
-print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
-print("-----------")
-print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
-print("-----------")
-print(" " + str(bottomLeft) +" | " + str(bottomMiddle) +" | " + str(bottomRight) +" ")
-
+bourd()
 seventhGo = input("Player one's forth go: ")
 
 if seventhGo == "Top Left":
@@ -333,11 +310,7 @@ if seventhGo == "Bottom Right":
 
 playerOne()
 
-print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
-print("-----------")
-print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
-print("-----------")
-print(" " + str(bottomLeft) +" | " + str(bottomMiddle) +" | " + str(bottomRight) +" ")
+bourd()
 
 eighthGo = input("Player two's forth go: ")
 
@@ -362,11 +335,7 @@ if eighthGo == "Bottom Right":
 
 playerTwo()
 
-print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
-print("-----------")
-print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
-print("-----------")
-print(" " + str(bottomLeft) +" | " + str(bottomMiddle) +" | " + str(bottomRight) +" ")
+bourd()
 
 ninethGo = input("Player one's fifth go: ")
 
@@ -391,8 +360,4 @@ if ninethGo == "Bottom Right":
 
 playerOne()
 
-print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
-print("-----------")
-print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
-print("-----------")
-print(" " + str(bottomLeft) +" | " + str(bottomMiddle) +" | " + str(bottomRight) +" ")
+bourd()
