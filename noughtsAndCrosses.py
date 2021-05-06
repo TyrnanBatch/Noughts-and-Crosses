@@ -23,6 +23,121 @@ bottomLeft = " "
 bottomMiddle = " "
 bottomRight = " "
 
+def playerOne():
+    if topLeft and topMiddle and topRight == "X":
+        print(" ")
+        print(" ")
+        print("--- Player One Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if topLeft and middleMiddle and bottomRight == "X":
+        print(" ")
+        print(" ")
+        print("--- Player One Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if topLeft and middleLeft and bottomLeft == "X":
+        print(" ")
+        print(" ")
+        print("--- Player One Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if topMiddle and middleMiddle and bottomMiddle == "X":
+        print(" ")
+        print(" ")
+        print("--- Player One Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if topRight and middleRight and bottomRight == "X":
+        print(" ")
+        print(" ")
+        print("--- Player One Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if middleLeft and middleMiddle and middleRight == "X":
+        print(" ")
+        print(" ")
+        print("--- Player One Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if bottomLeft and bottomMiddle and bottomRight == "X":
+        print(" ")
+        print(" ")
+        print("--- Player One Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+def playerTwo():
+    if topLeft and topMiddle and topRight == "O":
+        print(" ")
+        print(" ")
+        print("--- Player Two Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if topLeft and middleMiddle and bottomRight == "O":
+        print(" ")
+        print(" ")
+        print("--- Player Two Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if topLeft and middleLeft and bottomLeft == "O":
+        print(" ")
+        print(" ")
+        print("--- Player Two Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if topMiddle and middleMiddle and bottomMiddle == "O":
+        print(" ")
+        print(" ")
+        print("--- Player Two Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if topRight and middleRight and bottomRight == "O":
+        print(" ")
+        print(" ")
+        print("--- Player Two Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if middleLeft and middleMiddle and middleRight == "O":
+        print(" ")
+        print(" ")
+        print("--- Player Two Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+    if bottomLeft and bottomMiddle and bottomRight == "O":
+        print(" ")
+        print(" ")
+        print("--- Player Two Wins! ---")
+        print(" ")
+        print(" ")
+        quit()
+
+
 print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
 print("-----------")
 print(" " + str(middleLeft) +" | " + str(middleMiddle) +" | " + str(middleRight) +" ")
@@ -158,61 +273,7 @@ if fifthGo == "Bottom Middle":
 if fifthGo == "Bottom Right":
     bottomRight = "X"
 
-if topLeft and topMiddle and topRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topLeft and middleMiddle and bottomRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topLeft and middleLeft and bottomLeft == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topMiddle and middleMiddle and bottomMiddle == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topRight and middleRight and bottomRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if middleLeft and middleMiddle and middleRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if bottomLeft and bottomMiddle and bottomRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
+playerOne()
 
 print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
 print("-----------")
@@ -241,61 +302,7 @@ if sixthGo == "Bottom Middle":
 if sixthGo == "Bottom Right":
     bottomRight = "O"
 
-if topLeft and topMiddle and topRight == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topLeft and middleMiddle and bottomRight == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topLeft and middleLeft and bottomLeft == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topMiddle and middleMiddle and bottomMiddle == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topRight and middleRight and bottomRight == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if middleLeft and middleMiddle and middleRight == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if bottomLeft and bottomMiddle and bottomRight == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
+playerTwo()
 
 print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
 print("-----------")
@@ -324,61 +331,7 @@ if seventhGo == "Bottom Middle":
 if seventhGo == "Bottom Right":
     bottomRight = "X"
 
-if topLeft and topMiddle and topRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topLeft and middleMiddle and bottomRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topLeft and middleLeft and bottomleft == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topMiddle and middleMiddle and bottomMiddle == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topRight and middleRight and bottomRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if middleLeft and middleMiddle and middleRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if bottomLeft and bottomMiddle and bottomRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
+playerOne()
 
 print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
 print("-----------")
@@ -407,61 +360,7 @@ if eighthGo == "Bottom Middle":
 if eighthGo == "Bottom Right":
     bottomRight = "O"
 
-if topLeft and topMiddle and topRight == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topLeft and middleMiddle and bottomRight == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topLeft and middleLeft and bottomLeft == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topMiddle and middleMiddle and bottomMiddle == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topRight and middleRight and bottomRight == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if middleLeft and middleMiddle and middleRight == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if bottomLeft and bottomMiddle and bottomRight == "O":
-    print(" ")
-    print(" ")
-    print("--- Player Two Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
+playerTwo()
 
 print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
 print("-----------")
@@ -490,61 +389,7 @@ if ninethGo == "Bottom Middle":
 if ninethGo == "Bottom Right":
     bottomRight = "X"
 
-if topLeft and topMiddle and topRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topLeft and middleMiddle and bottomRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topLeft and middleLeft and bottomLeft == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topMiddle and middleMiddle and bottomMiddle == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if topRight and middleRight and bottomRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if middleLeft and middleMiddle and middleRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
-
-if bottomLeft and bottomMiddle and bottomRight == "X":
-    print(" ")
-    print(" ")
-    print("--- Player One Wins! ---")
-    print(" ")
-    print(" ")
-    quit()
+playerOne()
 
 print(" " + str(topLeft) +" | " + str(topMiddle) +" | " + str(topRight) +" ")
 print("-----------")
