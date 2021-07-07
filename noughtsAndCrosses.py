@@ -398,3 +398,5 @@ while check2 < 1:
 playerOne()
 
 bourd()
+
+print("--- Draw! ---")
