@@ -2,16 +2,17 @@ print("--- Noughts and Crosses ---")
 print(" ")
 print("the commands to place your pieces are as follow:")
 print(" ")
-print(" " + "Top Left   " + " | " + "Top Middle   " + " | " + "Top Right   " + " ")
+print(" " + "top left   " + " | " + "top middle   " + " | " + "top right   " + " ")
 print("------------------------------------------")
-print(" " + "Middle Left" + " | " + "Middle Middle" + " | " + "Middle Left " + " ")
+print(" " + "middle left" + " | " + "middle middle" + " | " + "middle right " + " ")
 print("------------------------------------------")
-print(" " + "Bottom Left" + " | " + "Bottom Middle" + " | " + "Bottom Right" + " ")
+print(" " + "bottom left" + " | " + "bottom middle" + " | " + "bottom right" + " ")
 print(" ")
 print(" ")
 print(" ")
 
 check = 2
+check2 = 0
 
 topLeft = " "
 topMiddle = " "
@@ -24,7 +25,7 @@ bottomMiddle = " "
 bottomRight = " "
 
 def playerOne():
-    if topLeft and topMiddle and topRight == "X":
+    if topLeft == "X" and topMiddle == "X" and topRight == "X":
         print(" ")
         print(" ")
         print("--- Player One Wins! ---")
@@ -32,7 +33,7 @@ def playerOne():
         print(" ")
         quit()
 
-    if topLeft and middleMiddle and bottomRight == "X":
+    if topLeft == "X" and middleMiddle == "X" == "X" and bottomRight == "X":
         print(" ")
         print(" ")
         print("--- Player One Wins! ---")
@@ -40,7 +41,7 @@ def playerOne():
         print(" ")
         quit()
 
-    if topLeft and middleLeft and bottomLeft == "X":
+    if topLeft == "X" and middleLeft == "X" and bottomLeft == "X":
         print(" ")
         print(" ")
         print("--- Player One Wins! ---")
@@ -48,7 +49,7 @@ def playerOne():
         print(" ")
         quit()
 
-    if topMiddle and middleMiddle and bottomMiddle == "X":
+    if topMiddle == "X" and middleMiddle == "X" and bottomMiddle == "X":
         print(" ")
         print(" ")
         print("--- Player One Wins! ---")
@@ -56,7 +57,7 @@ def playerOne():
         print(" ")
         quit()
 
-    if topRight and middleRight and bottomRight == "X":
+    if topRight == "X" and middleRight == "X" and bottomRight == "X":
         print(" ")
         print(" ")
         print("--- Player One Wins! ---")
@@ -64,7 +65,7 @@ def playerOne():
         print(" ")
         quit()
 
-    if middleLeft and middleMiddle and middleRight == "X":
+    if middleLeft == "X" and middleMiddle == "X" and middleRight == "X":
         print(" ")
         print(" ")
         print("--- Player One Wins! ---")
@@ -72,7 +73,7 @@ def playerOne():
         print(" ")
         quit()
 
-    if bottomLeft and bottomMiddle and bottomRight == "X":
+    if bottomLeft == "X" and bottomMiddle == "X" and bottomRight == "X":
         print(" ")
         print(" ")
         print("--- Player One Wins! ---")
@@ -81,7 +82,7 @@ def playerOne():
         quit()
 
 def playerTwo():
-    if topLeft and topMiddle and topRight == "O":
+    if topLeft == "O" and topMiddle == "O" and topRight == "O":
         print(" ")
         print(" ")
         print("--- Player Two Wins! ---")
@@ -89,7 +90,7 @@ def playerTwo():
         print(" ")
         quit()
 
-    if topLeft and middleMiddle and bottomRight == "O":
+    if topLeft == "O" and middleMiddle == "O" and bottomRight == "O":
         print(" ")
         print(" ")
         print("--- Player Two Wins! ---")
@@ -97,7 +98,7 @@ def playerTwo():
         print(" ")
         quit()
 
-    if topLeft and middleLeft and bottomLeft == "O":
+    if topLeft == "O" and middleLeft == "O" and bottomLeft == "O":
         print(" ")
         print(" ")
         print("--- Player Two Wins! ---")
@@ -105,7 +106,7 @@ def playerTwo():
         print(" ")
         quit()
 
-    if topMiddle and middleMiddle and bottomMiddle == "O":
+    if topMiddle == "O" and middleMiddle == "O" and bottomMiddle == "O":
         print(" ")
         print(" ")
         print("--- Player Two Wins! ---")
@@ -113,7 +114,7 @@ def playerTwo():
         print(" ")
         quit()
 
-    if topRight and middleRight and bottomRight == "O":
+    if topRight == "O" and middleRight == "O" and bottomRight == "O":
         print(" ")
         print(" ")
         print("--- Player Two Wins! ---")
@@ -121,7 +122,7 @@ def playerTwo():
         print(" ")
         quit()
 
-    if middleLeft and middleMiddle and middleRight == "O":
+    if middleLeft == "O" and middleMiddle == "O" and middleRight == "O":
         print(" ")
         print(" ")
         print("--- Player Two Wins! ---")
@@ -129,7 +130,7 @@ def playerTwo():
         print(" ")
         quit()
 
-    if bottomLeft and bottomMiddle and bottomRight == "O":
+    if bottomLeft == "O" and bottomMiddle == "O" and bottomRight == "O":
         print(" ")
         print(" ")
         print("--- Player Two Wins! ---")
@@ -146,217 +147,253 @@ def bourd():
 
 bourd()
 
-firstGo = input("Player one's first go: ")
+while check2 < 1:
+    check2 = 0
+    firstGo = input("Player one's first go: ")
+    firstGo = firstGo.lower()
 
-if firstGo == "Top Left":
-    topLeft = "X"
-if firstGo == "Top Middle":
-    topMiddle = "X"
-if firstGo == "Top Right":
-    topRight = "X"
-if firstGo == "Middle Left":
-    middleLeft = "X"
-if firstGo == "Middle Middle":
-    middleMiddle = "X"
-if firstGo == "Middle Right":
-    middleRight = "X"
-if firstGo == "Bottom Left":
-    bottomLeft = "X"
-if firstGo == "Bottom Middle":
-    bottomMiddle = "X"
-if firstGo == "Bottom Right":
-    bottomRight = "X"
-
-bourd()
-
-secondGo = input("Player two's first go: ")
-
-if secondGo == "Top Left":
-    topLeft = "O"
-if secondGo == "Top Middle":
-    topMiddle = "O"
-if secondGo == "Top Right":
-    topRight = "O"
-if secondGo == "Middle Left":
-    middleLeft = "O"
-if secondGo == "Middle Middle":
-    middleMiddle = "O"
-if secondGo == "Middle Right":
-    middleRight = "O"
-if secondGo == "Bottom Left":
-    bottomLeft = "O"
-if secondGo == "Bottom Middle":
-    bottomMiddle = "O"
-if secondGo == "Bottom Right":
-    bottomRight = "O"
+    if firstGo == "top left":
+        topLeft = "X"
+        check2 = check + 1
+    if firstGo == "top middle":
+        topMiddle = "X"
+        check2 = check + 1
+    if firstGo == "top right":
+        topRight = "X"
+    if firstGo == "middle left":
+        middleLeft = "X"
+        check2 = check + 1
+    if firstGo == "middle middle":
+        middleMiddle = "X"
+        check2 = check + 1
+    if firstGo == "middle right":
+        middleRight = "X"
+        check2 = check + 1
+    if firstGo == "bottom left":
+        bottomLeft = "X"
+        check2 = check + 1
+    if firstGo == "bottom middle":
+        bottomMiddle = "X"
+        check2 = check + 1
+    if firstGo == "bottom right":
+        bottomRight = "X"
+        check2 = check + 1
 
 bourd()
 
-thirdGo = input("Player one's second go: ")
+while check2 < 1:
+    check2 = 0
+    secondGo = input("Player two's first go: ")
+    secondGo = secondGo.lower()
 
-if thirdGo == "Top Left":
-    topLeft = "X"
-if thirdGo == "Top Middle":
-    topMiddle = "X"
-if thirdGo == "Top Right":
-    topRight = "X"
-if thirdGo == "Middle Left":
-    middleLeft = "X"
-if thirdGo == "Middle Middle":
-    middleMiddle = "X"
-if thirdGo == "Middle Right":
-    middleRight = "X"
-if thirdGo == "Bottom Left":
-    bottomLeft = "X"
-if thirdGo == "Bottom Middle":
-    bottomMiddle = "X"
-if thirdGo == "Bottom Right":
-    bottomRight = "X"
-
-bourd()
-
-fourthGo = input("PLayer two's second go: ")
-
-if fourthGo == "Top Left":
-    topLeft = "O"
-if fourthGo == "Top Middle":
-    topMiddle = "O"
-if fourthGo == "Top Right":
-    topRight = "O"
-if fourthGo == "Middle Left":
-    middleLeft = "O"
-if fourthGo == "Middle Middle":
-    middleMiddle = "O"
-if fourthGo == "Middle Right":
-    middleRight = "O"
-if fourthGo == "Bottom Left":
-    bottomLeft = "O"
-if fourthGo == "Bottom Middle":
-    bottomMiddle = "O"
-if fourthGo == "Bottom Right":
-    bottomRight = "O"
+    if secondGo == "top left":
+        topLeft = "O"
+    if secondGo == "top middle":
+        topMiddle = "O"
+    if secondGo == "top right":
+        topRight = "O"
+    if secondGo == "middle left":
+        middleLeft = "O"
+    if secondGo == "middle middle":
+        middleMiddle = "O"
+    if secondGo == "middle right":
+        middleRight = "O"
+    if secondGo == "bottom left":
+        bottomLeft = "O"
+    if secondGo == "bottom middle":
+        bottomMiddle = "O"
+    if secondGo == "bottom right":
+        bottomRight = "O"
 
 bourd()
 
-fifthGo = input("Player one's third go: ")
+while check2 < 1:
+    check2 = 0
+    thirdGo = input("Player one's second go: ")
+    thirdGo = thirdGo.lower()
 
-if fifthGo == "Top Left":
-    topLeft = "X"
-if fifthGo == "Top Middle":
-    topMiddle = "X"
-if fifthGo == "Top Right":
-    topRight = "X"
-if fifthGo == "Middle Left":
-    middleLeft = "X"
-if fifthGo == "Middle Middle":
-    middleMiddle = "X"
-if fifthGo == "Middle Right":
-    middleRight = "X"
-if fifthGo == "Bottom Left":
-    bottomLeft = "X"
-if fifthGo == "Bottom Middle":
-    bottomMiddle = "X"
-if fifthGo == "Bottom Right":
-    bottomRight = "X"
+    if thirdGo == "top left":
+        topLeft = "X"
+    if thirdGo == "top middle":
+        topMiddle = "X"
+    if thirdGo == "top right":
+        topRight = "X"
+    if thirdGo == "middle left":
+        middleLeft = "X"
+    if thirdGo == "middle middle":
+        middleMiddle = "X"
+    if thirdGo == "middle right":
+        middleRight = "X"
+    if thirdGo == "bottom left":
+        bottomLeft = "X"
+    if thirdGo == "bottom middle":
+        bottomMiddle = "X"
+    if thirdGo == "bottom right":
+        bottomRight = "X"
+
+bourd()
+
+while check2 < 1:
+    check2 = 0
+    fourthGo = input("PLayer two's second go: ")
+    fourthGo = fourthGo.lower()
+
+    if fourthGo == "top left":
+        topLeft = "O"
+    if fourthGo == "top middle":
+        topMiddle = "O"
+    if fourthGo == "top right":
+        topRight = "O"
+    if fourthGo == "middle left":
+        middleLeft = "O"
+    if fourthGo == "middle middle":
+        middleMiddle = "O"
+    if fourthGo == "middle right":
+        middleRight = "O"
+    if fourthGo == "bottom left":
+        bottomLeft = "O"
+    if fourthGo == "bottom middle":
+        bottomMiddle = "O"
+    if fourthGo == "bottom right":
+        bottomRight = "O"
+
+bourd()
+
+while check2 < 1:
+    check2 = 0
+    fifthGo = input("Player one's third go: ")
+    fifthGo = fifthGo.lower()
+
+    if fifthGo == "top left":
+        topLeft = "X"
+    if fifthGo == "top middle":
+        topMiddle = "X"
+    if fifthGo == "top right":
+        topRight = "X"
+    if fifthGo == "middle left":
+        middleLeft = "X"
+    if fifthGo == "middle middle":
+        middleMiddle = "X"
+    if fifthGo == "middle right":
+        middleRight = "X"
+    if fifthGo == "bottom left":
+        bottomLeft = "X"
+    if fifthGo == "bottom middle":
+        bottomMiddle = "X"
+    if fifthGo == "bottom right":
+        bottomRight = "X"
 
 playerOne()
 
 bourd()
 
-sixthGo = input("Player two's third go: ")
+while check2 < 1:
+    check2 = 0
+    sixthGo = input("Player two's third go: ")
+    sixthGo = sixthGo.lower()
 
-if sixthGo == "Top Left":
-    topLeft = "O"
-if sixthGo == "Top Middle":
-    topMiddle = "O"
-if sixthGo == "Top Right":
-    topRight = "O"
-if sixthGo == "Middle Left":
-    middleLeft = "O"
-if sixthGo == "Middle Middle":
-    middleMiddle = "O"
-if sixthGo == "Middle Right":
-    middleRight = "o"
-if sixthGo == "Bottom Left":
-    bottomLeft = "O"
-if sixthGo == "Bottom Middle":
-    bottomMiddle = "O"
-if sixthGo == "Bottom Right":
-    bottomRight = "O"
+    if sixthGo == "top left":
+        topLeft = "O"
+    if sixthGo == "top middle":
+        topMiddle = "O"
+    if sixthGo == "top right":
+        topRight = "O"
+    if sixthGo == "middle left":
+        middleLeft = "O"
+    if sixthGo == "middle middle":
+        middleMiddle = "O"
+    if sixthGo == "middle right":
+        middleRight = "O"
+    if sixthGo == "bottom left":
+        bottomLeft = "O"
+    if sixthGo == "bottom middle":
+        bottomMiddle = "O"
+    if sixthGo == "bottom right":
+        bottomRight = "O"
 
 playerTwo()
 
 bourd()
-seventhGo = input("Player one's forth go: ")
 
-if seventhGo == "Top Left":
-    topLeft = "X"
-if seventhGo == "Top Middle":
-    topMiddle = "X"
-if seventhGo == "Top Right":
-    topRight = "X"
-if seventhGo == "Middle Left":
-    middleLeft = "X"
-if seventhGo == "Middle Middle":
-    middleMiddle = "X"
-if seventhGo == "Middle Right":
-    middleRight = "X"
-if seventhGo == "Bottom Left":
-    bottomLeft = "X"
-if seventhGo == "Bottom Middle":
-    bottomMiddle = "X"
-if seventhGo == "Bottom Right":
-    bottomRight = "X"
+while check2 < 1:
+    check2 = 0
+    seventhGo = input("Player one's forth go: ")
+    seventhGo = seventhGo()
+
+    if seventhGo == "top left":
+        topLeft = "X"
+    if seventhGo == "top middle":
+        topMiddle = "X"
+    if seventhGo == "top right":
+        topRight = "X"
+    if seventhGo == "middle left":
+        middleLeft = "X"
+    if seventhGo == "middle middle":
+        middleMiddle = "X"
+    if seventhGo == "middle right":
+        middleRight = "X"
+    if seventhGo == "bottom left":
+        bottomLeft = "X"
+    if seventhGo == "bottom middle":
+        bottomMiddle = "X"
+    if seventhGo == "bottom right":
+        bottomRight = "X"
 
 playerOne()
 
 bourd()
 
-eighthGo = input("Player two's forth go: ")
+while check2 < 1:
+    check2 = 0
+    eighthGo = input("Player two's forth go: ")
+    eighthGo = eighthGo.lower()
 
-if eighthGo == "Top Left":
-    topLeft = "O"
-if eighthGo == "Top Middle":
-    topMiddle = "O"
-if sixthGo == "Top Right":
-    topRight = "O"
-if eighthGo == "Middle Left":
-    middleLeft = "O"
-if eighthGo == "Middle Middle":
-    middleMiddle = "O"
-if eighthGo == "Middle Right":
-    middleRight = "O"
-if eighthGo == "Bottom Left":
-    bottomLeft = "O"
-if eighthGo == "Bottom Middle":
-    bottomMiddle = "O"
-if eighthGo == "Bottom Right":
-    bottomRight = "O"
+    if eighthGo == "top left":
+        topLeft = "O"
+    if eighthGo == "top middle":
+        topMiddle = "O"
+    if sixthGo == "top right":
+        topRight = "O"
+    if eighthGo == "middle left":
+        middleLeft = "O"
+    if eighthGo == "middle middle":
+        middleMiddle = "O"
+    if eighthGo == "middle right":
+        middleRight = "O"
+    if eighthGo == "bottom left":
+        bottomLeft = "O"
+    if eighthGo == "bottom middle":
+        bottomMiddle = "O"
+    if eighthGo == "bottom right":
+        bottomRight = "O"
 
 playerTwo()
 
 bourd()
 
-ninethGo = input("Player one's fifth go: ")
+while check2 < 1:
+    check2 = 0
+    ninethGo = input("Player one's fifth go: ")
+    ninethGo = ninethGo.lower()
 
-if ninethGo == "Top Left":
-    topLeft = "X"
-if ninethGo == "Top Middle":
-    topMiddle = "X"
-if ninethGo == "Top Right":
-    topRight = "X"
-if ninethGo == "Middle Left":
-    middleLeft = "X"
-if ninethGo == "Middle Middle":
-    middleMiddle = "X"
-if ninethGo == "Middle Right":
-    middleRight = "X"
-if ninethGo == "Bottom Left":
-    bottomLeft = "X"
-if ninethGo == "Bottom Middle":
-    bottomMiddle = "X"
-if ninethGo == "Bottom Right":
-    bottomRight = "X"
+    if ninethGo == "top left":
+        topLeft = "X"
+    if ninethGo == "top middle":
+        topMiddle = "X"
+    if ninethGo == "top right":
+        topRight = "X"
+    if ninethGo == "middle left":
+        middleLeft = "X"
+    if ninethGo == "middle middle":
+        middleMiddle = "X"
+    if ninethGo == "middle right":
+        middleRight = "X"
+    if ninethGo == "bottom left":
+        bottomLeft = "X"
+    if ninethGo == "bottom middle":
+        bottomMiddle = "X"
+    if ninethGo == "bottom right":
+        bottomRight = "X"
 
 playerOne()
 
